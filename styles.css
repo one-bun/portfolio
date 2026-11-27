@@ -1105,7 +1105,7 @@ body::after {
 .sg-skip:hover { background: var(--pink-light); }
 .sg-num { font-family: var(--font-mono); font-size: 12px; line-height: 1.2; color: var(--cs-muted); }
 .sg-num + .cs-h4, .sg-num + .cs-h3 { margin-top: 8px; }
-.sg-roles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.sg-roles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .sg-role { padding-top: 16px; border-top: 2px solid rgba(212, 212, 212, 0.5); }
 .sg-role .cs-h4 + .cs-body { margin-top: 6px; }
 .sg-iter { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 48px; align-items: start; }
@@ -1135,7 +1135,6 @@ body::after {
   .sg-persona { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .sg-persona__id { flex-direction: row; align-items: center; }
   .sg-persona__cols, .sg-stats, .sg-principles, .sg-hmw, .sg-iter { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .sg-roles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sg-hmw__ours { padding-left: 0; padding-top: 24px; border-left: 0; border-top: 2px solid rgba(212, 212, 212, 0.8); }
   .sg-shot { flex: none; width: 100%; }
   .sg-hero { padding: 24px; }
