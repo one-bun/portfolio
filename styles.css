@@ -1031,3 +1031,43 @@ body::after {
 /* Keep the side menu (logo, menu, photo puzzle) above the edge blur so it stays sharp */
 .sidenav { z-index: 51; }
 @media (max-width: 1100px) { .sidenav { position: relative; } }
+
+/* ---------- Mobile menu: hamburger at top right, level with the logo, reveals the page links ---------- */
+.menu-toggle { display: none; }
+@media (max-width: 720px) {
+  .menu-toggle {
+    display: block; position: absolute; z-index: 2;
+    top: 13px; right: -12px; width: 44px; height: 44px;
+    padding: 0; border: 0; background: transparent; cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .menu-toggle:focus-visible { outline: 2px solid var(--pink); outline-offset: -4px; border-radius: 4px; }
+  .menu-toggle__bar {
+    position: absolute; left: 12px; width: 20px; height: 2px; border-radius: 1px; background: var(--ink);
+    transition: translate 250ms var(--ease-out), rotate 250ms var(--ease-out), opacity 150ms ease;
+  }
+  .menu-toggle__bar:nth-child(1) { top: 15px; }
+  .menu-toggle__bar:nth-child(2) { top: 21px; }
+  .menu-toggle__bar:nth-child(3) { top: 27px; }
+  /* Open: bars fold into an X */
+  .menu-toggle[aria-expanded="true"] .menu-toggle__bar:nth-child(1) { translate: 0 6px; rotate: 45deg; }
+  .menu-toggle[aria-expanded="true"] .menu-toggle__bar:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] .menu-toggle__bar:nth-child(3) { translate: 0 -6px; rotate: -45deg; }
+
+  /* The page links drop down under the button */
+  .sidenav .pages {
+    position: absolute; z-index: 1; top: 66px; right: 0;
+    min-width: 168px; padding: 14px 18px; gap: 12px;
+    background: #fff; border: 1px solid var(--divider); border-radius: 4px;
+    opacity: 0; visibility: hidden; translate: 0 -6px;
+    transition: opacity 200ms ease, translate 250ms var(--ease-out), visibility 0s linear 250ms;
+  }
+  .sidenav.is-menu-open .pages {
+    opacity: 1; visibility: visible; translate: 0 0;
+    transition: opacity 200ms ease, translate 250ms var(--ease-out), visibility 0s;
+  }
+  .sidenav .pages__link { font-size: 16px; }
+}
+@media (max-width: 720px) and (prefers-reduced-motion: reduce) {
+  .menu-toggle__bar, .sidenav .pages { transition: none; }
+}

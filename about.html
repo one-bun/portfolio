@@ -16,6 +16,7 @@
   <div class="page">
     <!-- Side nav -->
     <aside class="sidenav">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span></button>
       <div class="intro">
         <a class="logo-link" href="index.html" aria-label="Ken Piquero, home"><img class="logo" src="assets/discoball.gif" width="70" height="70" alt="" /></a>
         <div class="intro__text">
@@ -30,7 +31,7 @@
         </div>
       </div>
 
-      <nav class="pages" aria-label="Pages">
+      <nav class="pages" id="site-nav" aria-label="Pages">
         <a class="pages__link" href="index.html"><span class="pages__label">Work</span></a>
         <a class="pages__link" href="playground.html"><span class="pages__label">Playground</span></a>
         <a class="pages__link is-active" href="about.html" aria-current="page"><span class="pages__label">About</span></a>

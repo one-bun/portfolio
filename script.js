@@ -422,3 +422,26 @@
   });
   loops.forEach((el) => io.observe(el));
 })();
+
+// ---------- Mobile: hamburger button opens and closes the page links ----------
+(function mobileMenu() {
+  const button = document.querySelector(".menu-toggle");
+  const nav = document.getElementById("site-nav");
+  if (!button || !nav) return;
+  const sidenav = button.closest(".sidenav");
+  const setOpen = (open) => {
+    sidenav.classList.toggle("is-menu-open", open);
+    button.setAttribute("aria-expanded", open);
+    button.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  };
+  button.addEventListener("click", () => setOpen(button.getAttribute("aria-expanded") !== "true"));
+  // Close on Escape, on a tap outside the menu, after choosing a link, or when the screen widens past mobile
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && sidenav.classList.contains("is-menu-open")) { setOpen(false); button.focus(); }
+  });
+  document.addEventListener("click", (e) => {
+    if (sidenav.classList.contains("is-menu-open") && !nav.contains(e.target) && !button.contains(e.target)) setOpen(false);
+  });
+  nav.addEventListener("click", (e) => { if (e.target.closest("a")) setOpen(false); });
+  matchMedia("(max-width: 720px)").addEventListener("change", (e) => { if (!e.matches) setOpen(false); });
+})();
