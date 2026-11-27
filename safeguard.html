@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SafeGuard — Ken Piquero</title>
+  <meta name="description" content="Case study: SafeGuard, a real-time support system that helps job seekers spot, resist and recover from scams. 2nd place in Red Thread Innovations’ Tackling Online Harm pitch challenge." />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Hanken+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="cs">
+  <div class="cs-page">
+    <!-- Case study side menu: back + section links (scroll to each section, pink block marks the one in view) -->
+    <aside class="cs-aside">
+      <nav class="cs-toc" aria-label="Case study sections">
+        <a class="chip cs-back" href="index.html">← Back</a>
+        <p class="cs-toc__title">Content</p>
+        <div class="cs-toc__links">
+          <a class="pages__link is-active" href="#overview" aria-current="true"><span class="pages__label">Overview</span></a>
+          <a class="pages__link" href="#problem"><span class="pages__label">Problem</span></a>
+          <a class="pages__link" href="#research"><span class="pages__label">Research</span></a>
+          <a class="pages__link" href="#ideation"><span class="pages__label">Ideation</span></a>
+          <a class="pages__link" href="#testing"><span class="pages__label">Testing</span></a>
+          <a class="pages__link" href="#iteration"><span class="pages__label">Iteration</span></a>
+          <a class="pages__link" href="#solution"><span class="pages__label">Solution</span></a>
+          <a class="pages__link" href="#reflection"><span class="pages__label">Reflection</span></a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="cs-main">
+      <!-- ===== Overview ===== -->
+      <section id="overview" class="cs-section">
+        <div class="cs-metaline">
+          <img class="cs-logo cs-logo--img" src="assets/safeguard/rti-logo.png" width="28" height="28" alt="Red Thread Innovations logo" />
+          <p>Pitch challenge&nbsp;&nbsp;·&nbsp;&nbsp;Red Thread Innovations</p>
+        </div>
+        <h1 class="cs-h1">Early-warning systems that help job seekers spot scams before it’s too late</h1>
+        <p class="cs-lede">SafeGuard catches job scams while people browse, guides them when something feels off, and helps them recover if they get hit. Our team designed it in 6 weeks and placed 2nd at the final pitch.</p>
+
+        <div class="cs-panel sg-hero">
+          <img src="assets/safeguard/collage.png" alt="SafeGuard screens: dashboard, recovery assistant, scam inspector and account monitoring" />
+        </div>
+
+        <dl class="cs-facts">
+          <div><dt>Role</dt><dd>UX Research, UI Design, Prototyping</dd></div>
+          <div><dt>Team</dt><dd>Francine. P, Hayat. G, Mohriz. A</dd></div>
+          <div><dt>Project Managers</dt><dd>Julia Seo, Hala T.</dd></div>
+          <div><dt>Timeline</dt><dd>6 Weeks</dd></div>
+          <div><dt>Award</dt><dd>2nd Place</dd></div>
+        </dl>
+
+        <p class="cs-eyebrow cs-mt-96">Overview</p>
+        <h2 class="cs-statement">Most scam tools step in after the damage is done. <span class="cs-red">We designed for the moment of decision.</span></h2>
+        <p class="cs-body sg-lead">Red Thread Innovations (RTI) runs a pitch challenge where student teams design for a real social problem. Our brief was online harm: help vulnerable people recognize, resist and recover from fraud, misinformation and manipulative content. We had 6 weeks to pick a problem, research it, prototype, test, and pitch to a panel.</p>
+        <a class="chip sg-skip" href="#solution">Skip to the final solution ↓</a>
+
+        <p class="cs-eyebrow cs-mt-96">My role</p>
+        <h3 class="cs-h4">On a team of four, I worked across research, design and the pitch.</h3>
+        <div class="sg-roles cs-mt-24">
+          <div class="sg-role"><p class="sg-num">01</p><h4 class="cs-h4">Research</h4><p class="cs-body">Dug into the problem space, the numbers behind it, and the tools already out there.</p></div>
+          <div class="sg-role"><p class="sg-num">02</p><h4 class="cs-h4">UI design</h4><p class="cs-body">Designed screens for the browser extension, chatbot, dashboard and community page.</p></div>
+          <div class="sg-role"><p class="sg-num">03</p><h4 class="cs-h4">Prototyping</h4><p class="cs-body">Built the clickable prototype we tested with another team and used in the pitch.</p></div>
+          <div class="sg-role"><p class="sg-num">04</p><h4 class="cs-h4">Storytelling</h4><p class="cs-body">Shaped Alex’s story so research, features and pitch all followed one person.</p></div>
+        </div>
+      </section>
+
+      <!-- ===== Problem ===== -->
+      <section id="problem" class="cs-section cs-mt-150">
+        <p class="cs-eyebrow">The problem</p>
+        <h2 class="cs-h2">Job hunting has become one of the most exploited moments online, and newcomers feel it most.</h2>
+        <p class="cs-body">With unemployment rising, people are applying to more jobs, faster, across LinkedIn, email and chat apps. Scammers use that urgency. Newcomers to Canada are hit hardest: unfamiliar hiring norms, financial pressure, and often a language barrier.</p>
+
+        <div class="cs-stats sg-stats cs-mt-40">
+          <div class="cs-stat"><p class="cs-stat__num">73%</p><p class="cs-stat__text">of adults report some form of online scam or attack <span class="sg-source">(Pew Research Center, 2025)</span></p></div>
+          <div class="cs-stat"><p class="cs-stat__num">$501M</p><p class="cs-stat__text">lost to job scams in 2024, up from $90M in 2020 <span class="sg-source">(FTC, 2024)</span></p></div>
+          <div class="cs-stat"><p class="cs-stat__num">9 in 10</p><p class="cs-stat__text">new Canadians surveyed are worried about financial fraud <span class="sg-source">(TD Survey, 2024)</span></p></div>
+        </div>
+
+        <p class="cs-eyebrow cs-mt-96">Who we designed for</p>
+        <h3 class="cs-h4">We built every decision around one person: Alex.</h3>
+        <div class="cs-panel sg-persona cs-mt-24">
+          <div class="sg-persona__id">
+            <img class="sg-persona__face" src="assets/safeguard/alex-hopeful.png" width="96" height="96" alt="Illustration of Alex" />
+            <div>
+              <h3 class="cs-h4">Alex Rodriguez, 26</h3>
+              <p class="sg-persona__meta">Job seeker, new to Canada<br />Calgary, Alberta</p>
+            </div>
+          </div>
+          <div class="sg-persona__cols">
+            <div>
+              <p class="cs-eyebrow">Goals</p>
+              <ul class="sg-list">
+                <li>Find stable work quickly</li>
+                <li>Not miss real opportunities</li>
+                <li>Keep personal information safe</li>
+              </ul>
+            </div>
+            <div>
+              <p class="cs-eyebrow">Pain points</p>
+              <ul class="sg-list">
+                <li>Decision fatigue from high application volume</li>
+                <li>Pressure to reply fast</li>
+                <li>Unfamiliar hiring norms</li>
+              </ul>
+            </div>
+            <div>
+              <p class="cs-eyebrow">Needs</p>
+              <ul class="sg-list">
+                <li>Clear signals about scam risk</li>
+                <li>Help across LinkedIn, email and chat apps</li>
+                <li>A plan if something goes wrong</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="cs-quote cs-mt-48">
+          <p>“The hiring person just ghosted me, and I already paid for the job application. I’m so stressed, and I don’t know what to do next.”</p>
+          <cite>Alex, after the scam</cite>
+        </blockquote>
+
+        <div class="sg-hmw cs-mt-56">
+          <div>
+            <p class="cs-eyebrow">RTI’s brief</p>
+            <p class="cs-body">How might we help people, especially vulnerable groups, recognize, resist and recover from online harm caused by fraud, misinformation and manipulative content?</p>
+          </div>
+          <div class="sg-hmw__ours">
+            <p class="cs-eyebrow">Our design problem</p>
+            <h3 class="cs-h2">How might we protect job seekers, especially newcomers, from exploitation during periods of economic vulnerability?</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Research ===== -->
+      <section id="research" class="cs-section cs-mt-159">
+        <p class="cs-eyebrow">Research</p>
+        <h2 class="cs-h2">The brief was wide open, so our first job was choosing what to focus on.</h2>
+        <p class="cs-body">Each of us researched one kind of online harm and the group it affects most. Then we scored them side by side in a decision matrix built from the brief’s requirements, with the most weight on underserved markets. Employment scams scored highest, at 128.</p>
+        <figure class="cs-panel sg-figure cs-mt-24">
+          <img src="assets/safeguard/figjam-decision-matrix.png" alt="Decision matrix scoring eight online-harm topics; employment scams scored highest at 128" loading="lazy" />
+          <figcaption>FigJam · Decision matrix and the other topics we considered</figcaption>
+        </figure>
+
+        <p class="cs-eyebrow cs-mt-96">Market gaps</p>
+        <h3 class="cs-h2">What’s missing?</h3>
+        <p class="cs-body">Our competitive analysis found that existing tools are fragmented. None of them cover the whole scam lifecycle: prevention, mitigation and recovery.</p>
+        <figure class="cs-panel sg-figure sg-figure--flush cs-mt-24">
+          <img src="assets/safeguard/market-gaps.png" alt="Current solutions sit inside a larger circle of what’s missing: cross-platform protection, early-stage intervention and recovery systems" loading="lazy" />
+        </figure>
+
+        <p class="cs-eyebrow cs-mt-96">Key findings</p>
+        <h3 class="cs-h4">Scams aren’t only a security problem. They’re an emotional design problem.</h3>
+        <div class="sg-insights cs-mt-40">
+          <div class="sg-insight">
+            <div class="cs-panel sg-insight__art"><img src="assets/safeguard/alex-stressed.png" width="120" height="120" alt="" /></div>
+            <div>
+              <p class="sg-num">01</p>
+              <h4 class="cs-h4">Vulnerability is situational.</h4>
+              <p class="cs-body">Victims aren’t naive. Anyone slips during financial stress, isolation, overload or urgency. So SafeGuard can’t expect perfectly rational decisions. It has to lower the pressure.</p>
+            </div>
+          </div>
+          <div class="sg-insight">
+            <div class="cs-panel sg-insight__art"><img src="assets/safeguard/alex-worried.png" width="120" height="120" alt="" /></div>
+            <div>
+              <p class="sg-num">02</p>
+              <h4 class="cs-h4">Help shows up after it’s needed.</h4>
+              <p class="cs-body">A scam moves from LinkedIn to email to Telegram to a payment request. Most tools only watch one platform, and only react once someone clicks or pays.</p>
+            </div>
+          </div>
+          <div class="sg-insight">
+            <div class="cs-panel sg-insight__art"><img src="assets/safeguard/alex-overwhelmed.png" width="120" height="120" alt="" /></div>
+            <div>
+              <p class="sg-num">03</p>
+              <h4 class="cs-h4">Recovery is barely designed.</h4>
+              <p class="cs-body">Victims deal with shame, anxiety and distrust long after. Most products stop at detection. Very few help people get back on track.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="cs-eyebrow cs-mt-96">Design principles</p>
+        <h3 class="cs-h4">These findings became four rules for every screen.</h3>
+        <div class="sg-principles cs-mt-24">
+          <div class="sg-principle"><h4 class="cs-h4">Explain, don’t just warn.</h4><p class="cs-body">Show why something looks risky, in plain language, so people get better at spotting it themselves.</p></div>
+          <div class="sg-principle"><h4 class="cs-h4">Reduce shame.</h4><p class="cs-body">People don’t report scams because they’re embarrassed. Feel supportive, never punitive.</p></div>
+          <div class="sg-principle"><h4 class="cs-h4">Intervene before commitment.</h4><p class="cs-body">Step in during the urgent moment, before money or information is gone.</p></div>
+          <div class="sg-principle"><h4 class="cs-h4">Follow the user, not the platform.</h4><p class="cs-body">Scams move freely between apps. Protection should too.</p></div>
+        </div>
+      </section>
+
+      <!-- ===== Ideation ===== -->
+      <section id="ideation" class="cs-section cs-mt-160">
+        <p class="cs-eyebrow">Ideation</p>
+        <h2 class="cs-h2">Instead of one app that does everything, we designed separate features that work together.</h2>
+        <p class="cs-body">We each ran crazy 8s on both halves of the problem: catching scams early, and helping people after. Then we kept the ideas that covered a different stage of the scam, so together they’d close all three market gaps.</p>
+        <figure class="cs-panel sg-figure cs-mt-24">
+          <img src="assets/safeguard/figjam-crazy-8s.png" alt="Four rounds of crazy-8s sketches exploring scam alerts, reporting and recovery features" loading="lazy" />
+          <figcaption>FigJam · Crazy 8s from each team member</figcaption>
+        </figure>
+
+        <div class="cs-cols3 cs-mt-40">
+          <div class="cs-col cs-col--tight">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <p class="cs-eyebrow">Prevention</p>
+            <p class="cs-body">A browser extension that checks job posts while you browse.</p>
+          </div>
+          <div class="cs-col cs-col--tight">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <p class="cs-eyebrow">Mitigation</p>
+            <p class="cs-body">A recovery assistant and a dashboard for when something feels off.</p>
+          </div>
+          <div class="cs-col cs-col--tight">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <p class="cs-eyebrow">Recovery</p>
+            <p class="cs-body">Chat summaries and community alerts for after harm happens.</p>
+          </div>
+        </div>
+        <p class="cs-body cs-mt-40">Our first prototype was called <strong class="sg-strong">Verity</strong>. That’s the version we took into testing.</p>
+      </section>
+
+      <!-- ===== Testing ===== -->
+      <section id="testing" class="cs-section cs-mt-160">
+        <p class="cs-eyebrow">Testing</p>
+        <h2 class="cs-h2">We tested Verity with another team in a combined concept and usability session.</h2>
+        <p class="cs-body">We opened with a short presentation of the problem and the features, so participants knew what the app was for. Then they worked through the prototype on their own, answered concept and usability questions, and we finished with a group discussion.</p>
+
+        <div class="cs-panel cs-versions cs-mt-24" data-versions>
+          <div class="cs-versions__top">
+            <div class="cs-toggle" role="tablist" aria-label="Testing board">
+              <button class="cs-toggle__btn is-on" type="button" role="tab" aria-selected="true" aria-controls="test-session" id="tab-v1">Testing session</button>
+              <button class="cs-toggle__btn" type="button" role="tab" aria-selected="false" aria-controls="test-discussion" id="tab-v2">Group discussion</button>
+            </div>
+            <p class="cs-versions__summary" data-v1="Concept and usability answers from one participant" data-v2="Sticky notes from the group discussion">Concept and usability answers from one participant</p>
+          </div>
+          <div class="cs-version" id="test-session" role="tabpanel" aria-labelledby="tab-v1">
+            <figure class="sg-figure sg-figure--bare">
+              <img src="assets/safeguard/figjam-testing-session.png" alt="Concept and usability questions with one participant’s answers" loading="lazy" />
+            </figure>
+          </div>
+          <div class="cs-version" id="test-discussion" role="tabpanel" aria-labelledby="tab-v2" hidden>
+            <figure class="sg-figure sg-figure--bare">
+              <img src="assets/safeguard/figjam-group-discussion.png" alt="Group discussion sticky notes about each prototype" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="cs-cols2 cs-mt-40">
+          <div>
+            <p class="cs-eyebrow">What worked</p>
+            <p class="cs-body">People trusted it to break down a real scam and said it would help when someone is too overwhelmed to think clearly. The chat felt like the easiest way in.</p>
+          </div>
+          <div>
+            <p class="cs-eyebrow">What didn’t</p>
+            <p class="cs-body">It felt too broad for the people we said we were designing for. Starting the extension was unclear, and the dashboard used terms people didn’t understand.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Iteration ===== -->
+      <section id="iteration" class="cs-section cs-mt-160">
+        <p class="cs-eyebrow">Iteration</p>
+        <h2 class="cs-h2">The biggest note: <span class="cs-red">it needed to feel built for newcomers</span>, not for everyone.</h2>
+        <p class="cs-body">We took the three clearest pieces of feedback and reworked each feature, renaming Verity to SafeGuard along the way.</p>
+
+        <div class="sg-iter cs-mt-56">
+          <div class="sg-iter__head">
+            <p class="sg-num">01</p>
+            <h3 class="cs-h3">Browser extension</h3>
+            <p class="cs-body"><span class="sg-label">Feedback</span>People couldn’t tell how to start the scan, and didn’t notice the job had already been reported.</p>
+            <p class="cs-body"><span class="sg-label">Change</span>Clearer controls, a more obvious “Report job posting” button, and a confirmation at the end so people know the report went through.</p>
+          </div>
+          <div class="sg-iter__pair">
+            <figure class="sg-shot-fig"><figcaption>Before</figcaption><div class="sg-shot"><img src="assets/safeguard/extension-before.png" alt="Early Verity scam detector over a LinkedIn job post" loading="lazy" /></div></figure>
+            <figure class="sg-shot-fig"><figcaption>After</figcaption><div class="sg-shot"><img src="assets/safeguard/inspector.gif" alt="SafeGuard Inspector checking a LinkedIn job post" loading="lazy" /></div></figure>
+          </div>
+        </div>
+
+        <div class="sg-iter cs-mt-96">
+          <div class="sg-iter__head">
+            <p class="sg-num">02</p>
+            <h3 class="cs-h3">Chatbot</h3>
+            <p class="cs-body"><span class="sg-label">Feedback</span>In the group discussion, people agreed the platform felt too general and should be tailored to newcomers.</p>
+            <p class="cs-body"><span class="sg-label">Change</span>Added a language switcher to the chatbot. Language was one of the biggest barriers for newcomers, and the moment you think you’re being scammed is the worst time to read a second language.</p>
+          </div>
+          <div class="sg-iter__pair">
+            <figure class="sg-shot-fig"><figcaption>Before</figcaption><div class="sg-shot"><img src="assets/safeguard/chatbot-before.png" alt="Early Verity recovery assistant in English only" loading="lazy" /></div></figure>
+            <figure class="sg-shot-fig"><figcaption>After</figcaption><div class="sg-shot"><img src="assets/safeguard/chatbot-after.png" alt="SafeGuard recovery assistant with a language selector" loading="lazy" /></div></figure>
+          </div>
+        </div>
+
+        <div class="sg-iter cs-mt-96">
+          <div class="sg-iter__head">
+            <p class="sg-num">03</p>
+            <h3 class="cs-h3">Dashboard</h3>
+            <p class="cs-body"><span class="sg-label">Feedback</span>The account categories didn’t explain what they monitored or why it mattered, and the “Action needed” reminder confused people.</p>
+            <p class="cs-body"><span class="sg-label">Change</span>Added a short description to every category, and replaced the reminder with a list of scam warnings pulled from across the platform.</p>
+          </div>
+          <div class="sg-iter__pair">
+            <figure class="sg-shot-fig"><figcaption>Before</figcaption><div class="sg-shot"><img src="assets/safeguard/dashboard-before.png" alt="Early dashboard with an Action needed banner and unlabelled categories" loading="lazy" /></div></figure>
+            <figure class="sg-shot-fig"><figcaption>After</figcaption><div class="sg-shot"><img src="assets/safeguard/dashboard-after.png" alt="SafeGuard dashboard with scam warnings and described categories" loading="lazy" /></div></figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Solution ===== -->
+      <section id="solution" class="cs-section cs-mt-160">
+        <p class="cs-eyebrow">Final solution</p>
+        <h2 class="cs-h2">SafeGuard: one ecosystem that follows job seekers through the whole hiring journey.</h2>
+        <p class="cs-body">Five features, each covering a different stage: <strong class="sg-strong">prevention</strong> while people browse, <strong class="sg-strong">mitigation</strong> when something feels off, and <strong class="sg-strong">recovery</strong> after harm.</p>
+
+        <div class="cs-feature cs-mt-79">
+          <div class="cs-feature__text">
+            <p class="cs-eyebrow">Prevention</p>
+            <h3 class="cs-h2 sg-mt-10">01&nbsp;&nbsp;Inspector</h3>
+            <p class="cs-body">A browser extension that scans job posts and messages for impersonation, urgent language, unrealistic salaries, odd onboarding steps and mismatched domains. It explains why something looks risky, not just that it does.</p>
+          </div>
+          <div class="sg-shot"><img src="assets/safeguard/inspector.gif" alt="SafeGuard Inspector checking a LinkedIn job posting" loading="lazy" /></div>
+        </div>
+
+        <div class="cs-feature cs-mt-96">
+          <div class="cs-feature__text">
+            <p class="cs-eyebrow">Mitigation</p>
+            <h3 class="cs-h2 sg-mt-10">02&nbsp;&nbsp;Recovery assistant</h3>
+            <p class="cs-body">A multilingual chatbot for the moment something feels off. Alex can ask in her own language whether a request is normal and get calm, step-by-step guidance.</p>
+          </div>
+          <div class="sg-shot"><img src="assets/safeguard/chatbot.gif" alt="Alex asking the recovery assistant about a recruiter’s e-transfer request" loading="lazy" /></div>
+        </div>
+
+        <div class="cs-feature cs-mt-96">
+          <div class="cs-feature__text">
+            <p class="cs-eyebrow">Mitigation</p>
+            <h3 class="cs-h2 sg-mt-10">03&nbsp;&nbsp;Chat summary</h3>
+            <p class="cs-body">Every conversation becomes a short summary: what happened, the risk level, the scam type and what to do next. Nobody has to piece it together under stress.</p>
+          </div>
+          <div class="sg-shot"><img src="assets/safeguard/chat-summary.gif" alt="A chat summary showing risk level, scam type and advised actions" loading="lazy" /></div>
+        </div>
+
+        <div class="cs-feature cs-mt-96">
+          <div class="cs-feature__text">
+            <p class="cs-eyebrow">Mitigation</p>
+            <h3 class="cs-h2 sg-mt-10">04&nbsp;&nbsp;Risk dashboard</h3>
+            <p class="cs-body">One view of compromised accounts, linked services, government ID exposure and live warnings. Scam fallout is spread across many systems, so we brought it into one place.</p>
+          </div>
+          <div class="sg-shot sg-shot--plain"><img src="assets/safeguard/dashboard.png" alt="SafeGuard dashboard with scam warnings and account monitoring" loading="lazy" /></div>
+        </div>
+
+        <div class="cs-feature cs-mt-96">
+          <div class="cs-feature__text">
+            <p class="cs-eyebrow">Recovery</p>
+            <h3 class="cs-h2 sg-mt-10">05&nbsp;&nbsp;Community alerts</h3>
+            <p class="cs-body">People can report scam patterns and see alerts about new ones. Staying safe becomes something people do together, not alone.</p>
+          </div>
+          <div class="sg-shot"><img src="assets/safeguard/community.gif" alt="Community page with an official scam alert and submitted reports" loading="lazy" /></div>
+        </div>
+      </section>
+
+      <!-- ===== Reflection ===== -->
+      <section id="reflection" class="cs-section cs-mt-161">
+        <p class="cs-eyebrow">Outcome</p>
+        <h2 class="cs-h2">SafeGuard placed 2nd at RTI’s final pitch.</h2>
+        <p class="cs-body">More than the result, it changed how our team thinks about online safety: less about detecting scams, more about emotional vulnerability, platform responsibility, and support that shows up when people need it.</p>
+
+        <p class="cs-eyebrow cs-mt-80">My takeaways</p>
+        <div class="cs-cols3 cs-mt-18">
+          <div class="cs-col cs-col--takeaway">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <h3 class="cs-h3">Scams are design problems too.</h3>
+            <p class="cs-body">I came in seeing scams as cybersecurity. I left seeing people forced to make high-stakes decisions fast, with little clarity, on platforms built for speed over care.</p>
+          </div>
+          <div class="cs-col cs-col--takeaway">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <h3 class="cs-h3">Narrow beats broad.</h3>
+            <p class="cs-body">Our biggest jump came from one note: build it for newcomers. Designing for a specific person made every feature sharper than designing for “vulnerable users”.</p>
+          </div>
+          <div class="cs-col cs-col--takeaway">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <h3 class="cs-h3">A story holds it together.</h3>
+            <p class="cs-body">Alex tied our research, interface decisions and pitch into one thread. When priorities shifted, she kept us pointed at the same person.</p>
+          </div>
+        </div>
+
+        <p class="cs-eyebrow cs-mt-77">If we kept going</p>
+        <ul class="sg-list sg-list--next">
+          <li>Test SafeGuard with newcomers directly, not just peers.</li>
+          <li>Expand beyond job scams to marketplace, messaging and financial fraud.</li>
+          <li>Partner with job platforms so warnings appear inside the listing itself.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__label footer__clock">TORONTO&nbsp;&nbsp;<time id="toronto-time">3:13 am</time></p>
+    <div class="footer__group">
+      <p class="footer__label footer__label--mono">HI!</p>
+      <a href="mailto:k3npiquero@gmail.com">Email</a>
+      <a href="https://www.instagram.com/oreuqipp/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/kenpiquero/" target="_blank" rel="noopener">Linkedin</a>
+      <a href="https://x.com/pink_saucee" target="_blank" rel="noopener">X</a>
+    </div>
+    <div class="footer__group">
+      <p class="footer__label">PAGES</p>
+      <a href="index.html">Work</a>
+      <a href="playground.html">Playground</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1MmYF3_zvHkycv5jFG_6_oVnmKX8XQRYW/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <p class="footer__label footer__copy">KEN PIQUERO © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
