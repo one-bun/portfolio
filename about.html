@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Ken Piquero</title>
+  <meta name="description" content="Ken Piquero is a product designer with a background in e-commerce." />
+  <link rel="icon" href="assets/discoball.gif" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Hanken+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <div class="page">
+    <!-- Side nav -->
+    <aside class="sidenav">
+      <div class="intro">
+        <a class="logo-link" href="index.html" aria-label="Ken Piquero, home"><img class="logo" src="assets/discoball.gif" width="70" height="70" alt="" /></a>
+        <div class="intro__text">
+          <div class="intro__copy">
+            <h1 class="intro__title" data-typewriter aria-label="About me">About me</h1>
+            <p class="intro__bio appear" style="--d:0ms">Currently listening to...</p>
+          </div>
+          <button class="listening appear" style="--d:180ms" type="button" aria-pressed="false" aria-label="Play Cross Your Mind on Spotify" data-cursor="▶ Cross Your Mind" data-cursor-shape="star" data-spotify-uri="spotify:track:3a3zDlE4bgI6ZvU00m6o84">
+            <img src="assets/currently-listening.jpg" width="156" height="149" alt="" />
+          </button>
+          <div class="listening__player" aria-hidden="true"><div id="spotify-embed"></div></div>
+        </div>
+      </div>
+
+      <nav class="pages" aria-label="Pages">
+        <a class="pages__link" href="index.html"><span class="pages__label">Work</span></a>
+        <a class="pages__link" href="playground.html"><span class="pages__label">Playground</span></a>
+        <a class="pages__link is-active" href="about.html" aria-current="page"><span class="pages__label">About</span></a>
+        <a class="pages__link" href="https://drive.google.com/file/d/1ALhv70O0RMB7-Ny_9Tpl9LPKsm_A7ia5/view?usp=sharing" target="_blank" rel="noopener"><span class="pages__label">Resume</span></a>
+      </nav>
+
+      <!-- Photo puzzle: drag a tile to swap it clockwise, click a tile to flip its photo -->
+      <div class="puzzle" aria-label="Photo puzzle — drag a tile to swap it clockwise, click to change its photo">
+        <button class="tile" data-piece="1" type="button" aria-label="Puzzle piece 1" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-113.07%;top:-184.95%;width:240.09%" />
+            <span class="sticker" style="left:59.97px;top:47px"></span>
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:61.68px;top:62.37px" />
+            <span class="sticker" style="left:41.96px;top:64.4px"></span>
+            <span class="sticker" style="left:31.97px;top:57.49px"></span>
+            <span class="sticker" style="left:21.99px;top:57.49px"></span>
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:13.71px;top:65.28px" />
+          </span>
+          <span class="tile__face tile__face--b">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-57.9%;top:-0.03%;width:378.38%" />
+          </span>
+        </button>
+        <button class="tile" data-piece="2" type="button" aria-label="Puzzle piece 2" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-0.21%;top:-73.68%;width:236.71%" />
+            <img class="sticker-rect" src="assets/sticker-rect.svg" width="7.68155" height="10.7542" alt="" style="left:2px;top:56.36px" />
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:31.11px;top:42.64px" />
+            <span class="sticker" style="left:29.4px;top:51.07px"></span>
+            <span class="sticker" style="left:17.93px;top:47.41px"></span>
+            <span class="sticker" style="left:17.93px;top:61.14px"></span>
+          </span>
+          <span class="tile__face tile__face--b">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-169.32%;top:-0.03%;width:378.38%" />
+          </span>
+        </button>
+        <button class="tile" data-piece="3" type="button" aria-label="Puzzle piece 3" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-113.07%;top:-73.68%;width:240.09%" />
+            <span class="sticker" style="left:52px;top:2px;width:16.131px;height:6.913px"></span>
+            <span class="sticker" style="left:60.03px;top:12.26px"></span>
+          </span>
+          <span class="tile__face tile__face--b">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-57.9%;top:-109.89%;width:378.38%" />
+          </span>
+        </button>
+        <button class="tile" data-piece="4" type="button" aria-label="Puzzle piece 4" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-0.21%;top:-183.54%;width:236.71%" />
+            <span class="sticker" style="left:2px;top:2px;width:23.813px;height:6.913px"></span>
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:31.11px;top:24.89px" />
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:39.81px;top:24.89px" />
+            <span class="sticker" style="left:29.4px;top:12.26px"></span>
+            <span class="sticker" style="left:17.93px;top:12.26px"></span>
+          </span>
+          <span class="tile__face tile__face--b" style="left:1px;width:70px">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-169.32%;top:-109.89%;width:378.38%" />
+          </span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="about">
+      <section class="about__intro">
+        <div class="about__who">
+          <h2 class="about__heading">Who is Ken?</h2>
+          <ol class="about__list">
+            <li>In another life, Ken was a llama grazing the mountains of south america or a blade of grass following the ebb of flow of the windy plains, but in this life he helps businesses grow through strategy and implementation. He has worked in e-commerce, startups and tinkering at small businesses to help them scale.</li>
+            <li>He believes that design can be a tool for change, and influence good. Believing in design and technology as tools for equity, access, and empowerment.</li>
+            <li>When he is not designing you can find him cooking, finding the meaning of life through a video-game he thought he beat 7 years ago, or soul searching through a long playlist that is ever changing. Oh, and he really likes perfume.</li>
+          </ol>
+        </div>
+
+        <div class="photo-fan" aria-label="Photos of Ken — click a photo to bring it to the front">
+          <button class="photo-fan__photo" type="button" aria-label="Photo 1"><img src="assets/about-photo-1.jpg" alt="" /></button>
+          <button class="photo-fan__photo" type="button" aria-label="Photo 2"><img src="assets/about-photo-2.jpg" alt="" /></button>
+          <button class="photo-fan__photo" type="button" aria-label="Photo 3"><img src="assets/about-photo-3.jpg" alt="" /></button>
+          <button class="photo-fan__photo" type="button" aria-label="Photo 4"><img src="assets/about-photo-4.jpg" alt="" /></button>
+        </div>
+      </section>
+
+      <section class="experience">
+        <h2 class="about__heading">Experience</h2>
+        <ul class="experience__list">
+          <li class="experience__row"><span class="experience__company">Dori Labs</span><span class="experience__role">Product Design Intern</span><span class="experience__year">2026</span></li>
+          <li class="experience__row"><span class="experience__company">Rain &amp; Dawn</span><span class="experience__role">Product Designer</span><span class="experience__year">2026</span></li>
+          <li class="experience__row"><span class="experience__company">Studio Dialectica</span><span class="experience__role">Product/Web Design Intern</span><span class="experience__year">2026</span></li>
+          <li class="experience__row"><span class="experience__company">Hackville</span><span class="experience__role">Advisor</span><span class="experience__year">2025 - 2026</span></li>
+          <li class="experience__row"><span class="experience__company">Pixel Perfect</span><span class="experience__role">Product Designer</span><span class="experience__year">2025 - 2026</span></li>
+          <li class="experience__row"><span class="experience__company">Cookhome</span><span class="experience__role">Product/Web Design Intern</span><span class="experience__year">2025</span></li>
+          <li class="experience__row"><span class="experience__company">Ever Lasting Fabrics</span><span class="experience__role">Product/Web Design Intern</span><span class="experience__year">2025</span></li>
+          <li class="experience__row"><span class="experience__company">Hackville</span><span class="experience__role">Social Media Lead/Designer</span><span class="experience__year">2023 - 2025</span></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__label footer__clock">TORONTO&nbsp;&nbsp;<time id="toronto-time">3:13 am</time></p>
+    <div class="footer__group">
+      <p class="footer__label footer__label--mono">HI!</p>
+      <a href="mailto:k3npiquero@gmail.com">Email</a>
+      <a href="https://www.instagram.com/oreuqipp/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/kenpiquero/" target="_blank" rel="noopener">Linkedin</a>
+      <a href="https://x.com/pink_saucee" target="_blank" rel="noopener">X</a>
+    </div>
+    <div class="footer__group">
+      <p class="footer__label">PAGES</p>
+      <a href="index.html">Work</a>
+      <a href="playground.html">Playground</a>
+      <a href="about.html">About</a>
+    </div>
+    <p class="footer__label footer__copy">KEN PIQUERO © 2026</p>
+  </footer>
+
+  <div class="cursor-pill" aria-hidden="true"></div>
+  <script src="script.js"></script>
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+</body>
+</html>

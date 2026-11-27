@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ken Piquero — Product Designer</title>
+  <meta name="description" content="Ken Piquero is a product designer with a background in e-commerce." />
+  <link rel="icon" href="assets/discoball.gif" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Hanken+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <div class="page">
+    <!-- Side nav -->
+    <aside class="sidenav">
+      <div class="intro">
+        <a class="logo-link" href="index.html" aria-label="Ken Piquero, home"><img class="logo" src="assets/discoball.gif" width="70" height="70" alt="" /></a>
+        <div class="intro__text">
+          <div class="intro__copy">
+            <h1 class="intro__title" data-typewriter aria-label="Hi, I’m Ken Piquero!">Hi, I’m Ken Piquero!</h1>
+            <p class="intro__bio appear" style="--d:0ms">He is a product designer with a background in e-commerce, who is saving his sticker collection for “later...”</p>
+          </div>
+          <ul class="chips chips--light">
+            <li class="chip appear" style="--d:180ms">Prev @ Dori Labs</li>
+            <li class="chip appear" style="--d:250ms">Studio Dialectica</li>
+            <li class="chip appear" style="--d:320ms">Ever Lasting Fabrics</li>
+            <li class="chip appear" style="--d:390ms">Hackville</li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="pages" aria-label="Pages">
+        <a class="pages__link is-active" href="index.html" aria-current="page"><span class="pages__label">Work</span></a>
+        <a class="pages__link" href="playground.html"><span class="pages__label">Playground</span></a>
+        <a class="pages__link" href="about.html"><span class="pages__label">About</span></a>
+        <a class="pages__link" href="https://drive.google.com/file/d/1ALhv70O0RMB7-Ny_9Tpl9LPKsm_A7ia5/view?usp=sharing" target="_blank" rel="noopener"><span class="pages__label">Resume</span></a>
+      </nav>
+
+      <!-- Photo puzzle: drag a tile to swap it clockwise, click a tile to flip its photo -->
+      <div class="puzzle" aria-label="Photo puzzle — drag a tile to swap it clockwise, click to change its photo">
+        <button class="tile" data-piece="1" type="button" aria-label="Puzzle piece 1" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-113.07%;top:-184.95%;width:240.09%" />
+            <span class="sticker" style="left:59.97px;top:47px"></span>
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:61.68px;top:62.37px" />
+            <span class="sticker" style="left:41.96px;top:64.4px"></span>
+            <span class="sticker" style="left:31.97px;top:57.49px"></span>
+            <span class="sticker" style="left:21.99px;top:57.49px"></span>
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:13.71px;top:65.28px" />
+          </span>
+          <span class="tile__face tile__face--b">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-57.9%;top:-0.03%;width:378.38%" />
+          </span>
+        </button>
+        <button class="tile" data-piece="2" type="button" aria-label="Puzzle piece 2" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-0.21%;top:-73.68%;width:236.71%" />
+            <img class="sticker-rect" src="assets/sticker-rect.svg" width="7.68155" height="10.7542" alt="" style="left:2px;top:56.36px" />
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:31.11px;top:42.64px" />
+            <span class="sticker" style="left:29.4px;top:51.07px"></span>
+            <span class="sticker" style="left:17.93px;top:47.41px"></span>
+            <span class="sticker" style="left:17.93px;top:61.14px"></span>
+          </span>
+          <span class="tile__face tile__face--b">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-169.32%;top:-0.03%;width:378.38%" />
+          </span>
+        </button>
+        <button class="tile" data-piece="3" type="button" aria-label="Puzzle piece 3" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-113.07%;top:-73.68%;width:240.09%" />
+            <span class="sticker" style="left:52px;top:2px;width:16.131px;height:6.913px"></span>
+            <span class="sticker" style="left:60.03px;top:12.26px"></span>
+          </span>
+          <span class="tile__face tile__face--b">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-57.9%;top:-109.89%;width:378.38%" />
+          </span>
+        </button>
+        <button class="tile" data-piece="4" type="button" aria-label="Puzzle piece 4" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-0.21%;top:-183.54%;width:236.71%" />
+            <span class="sticker" style="left:2px;top:2px;width:23.813px;height:6.913px"></span>
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:31.11px;top:24.89px" />
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:39.81px;top:24.89px" />
+            <span class="sticker" style="left:29.4px;top:12.26px"></span>
+            <span class="sticker" style="left:17.93px;top:12.26px"></span>
+          </span>
+          <span class="tile__face tile__face--b" style="left:1px;width:70px">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-169.32%;top:-109.89%;width:378.38%" />
+          </span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Column 1 -->
+    <main class="col col--left">
+      <a class="case case--everlasting" href="everlasting.html">
+        <div class="case__media media--everlasting" data-cursor="view case study">
+          <div class="reel reel--cover" role="img" aria-label="Ever Lasting Fabric Matchmaker quiz screens coming together">
+            <div class="reel__stage">
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-01.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-02.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-03.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-04.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-05.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-06.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-07.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-08.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-09.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-10.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-11.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-12.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="case__meta">
+          <ul class="chips">
+            <li class="chip">Mobile</li><li class="chip">0 → 1</li><li class="chip">E-commerce</li><li class="chip">Content Design</li>
+          </ul>
+          <div class="case__text case__text--tight">
+            <h2 class="case__title">Bringing Ever lasting’s first quiz to increase conversion and user drop off</h2>
+            <p class="case__desc">Solely implemented a matchmaker quiz to increase conversion for 150, 000+ monthly visits</p>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <!-- Column 2 -->
+    <section class="col col--right">
+      <a class="case" href="#">
+        <div class="case__media media--safeguard" data-cursor="coming soon...">
+          <div class="safeguard">
+            <img class="anim-mark" src="assets/safeguard-mark.svg" width="129.326" height="143.788" alt="" />
+            <div class="safeguard__word">
+              <img class="anim-safe" src="assets/safeguard-safe.svg" width="114.609" height="42.4329" alt="Safe" />
+              <img class="anim-guard" src="assets/safeguard-guard.svg" width="156.599" height="42.4337" alt="Guard" />
+            </div>
+          </div>
+        </div>
+        <div class="case__meta">
+          <ul class="chips">
+            <li class="chip">Ai</li><li class="chip">0 → 1</li><li class="chip">UX Research</li><li class="chip">Product Design</li><li class="chip">2nd Place</li>
+          </ul>
+          <div class="case__text">
+            <h2 class="case__title">Early-warning systems that help spot scams before it’s too late.</h2>
+            <p class="case__desc">Concept for RTI’s online harm challenge winning second place</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="case" href="#">
+        <div class="case__media media--dori" data-cursor="coming soon...">
+          <div class="dori__clouds" aria-hidden="true">
+            <div class="dori__drift">
+              <img src="assets/halftone-clouds.svg" width="695.58" height="427.908" alt="" />
+            </div>
+          </div>
+          <img class="dori__icon" src="assets/dori-app-icon.png" alt="Dori Labs app icon" />
+        </div>
+        <div class="case__meta">
+          <ul class="chips">
+            <li class="chip">Mobile</li><li class="chip">Startup</li><li class="chip">Accessibility</li><li class="chip">Marketing</li><li class="chip">Web</li>
+          </ul>
+          <div class="case__text">
+            <h2 class="case__title">Who’s calling my phone? Designing for an accessibility startup</h2>
+            <p class="case__desc">Creating and running ads for an early stage start up with no prior design team and framing for better conversion</p>
+          </div>
+        </div>
+      </a>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__label footer__clock">TORONTO&nbsp;&nbsp;<time id="toronto-time">3:13 am</time></p>
+    <div class="footer__group">
+      <p class="footer__label footer__label--mono">HI!</p>
+      <a href="mailto:k3npiquero@gmail.com">Email</a>
+      <a href="https://www.instagram.com/oreuqipp/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/kenpiquero/" target="_blank" rel="noopener">Linkedin</a>
+      <a href="https://x.com/pink_saucee" target="_blank" rel="noopener">X</a>
+    </div>
+    <div class="footer__group">
+      <p class="footer__label">PAGES</p>
+      <a href="index.html">Work</a>
+      <a href="playground.html">Playground</a>
+      <a href="about.html">About</a>
+    </div>
+    <p class="footer__label footer__copy">KEN PIQUERO © 2026</p>
+  </footer>
+
+  <div class="cursor-pill" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>

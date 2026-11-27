@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ever Lasting Fabric Matchmaker — Ken Piquero</title>
+  <meta name="description" content="Case study: turning how shoppers feel into what they buy with Ever Lasting’s Fabric Matchmaker quiz." />
+  <link rel="icon" href="assets/discoball.gif" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=EB+Garamond:wght@500&family=Hanken+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="cs">
+  <div class="cs-page">
+    <!-- Case study side menu: back + section links (scroll to each section, pink block marks the one in view) -->
+    <aside class="cs-aside">
+      <nav class="cs-toc" aria-label="Case study sections">
+        <a class="chip cs-back" href="index.html">← Back</a>
+        <p class="cs-toc__title">Content</p>
+        <div class="cs-toc__links">
+          <a class="pages__link is-active" href="#overview" aria-current="true"><span class="pages__label">Overview</span></a>
+          <a class="pages__link" href="#problem"><span class="pages__label">Problem</span></a>
+          <a class="pages__link" href="#research"><span class="pages__label">Research</span></a>
+          <a class="pages__link" href="#direction"><span class="pages__label">Direction</span></a>
+          <a class="pages__link" href="#solution"><span class="pages__label">Solution</span></a>
+          <a class="pages__link" href="#process"><span class="pages__label">Process</span></a>
+          <a class="pages__link" href="#impact"><span class="pages__label">Impact</span></a>
+          <a class="pages__link" href="#takeaways"><span class="pages__label">Takeaways</span></a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="cs-main">
+      <!-- ===== Overview ===== -->
+      <section id="overview" class="cs-section">
+        <div class="cs-metaline">
+          <span class="cs-logo" aria-hidden="true">EL</span>
+          <p>Internship&nbsp;&nbsp;·&nbsp;&nbsp;Back-to-school campaign</p>
+        </div>
+        <h1 class="cs-h1">Turning how shoppers feel into what they buy</h1>
+        <p class="cs-lede">I pitched a fabric matchmaking quiz during intern onboarding to lift conversion. It was picked for the back-to-school campaign, and I designed and shipped it in 4 weeks.</p>
+
+        <div class="cs-hero">
+          <div class="reel cs-hero__reel" role="img" aria-label="The 12 Fabric Matchmaker quiz screens coming together">
+            <div class="reel__stage">
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-01.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-02.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-03.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-04.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-05.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-06.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-07.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-08.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-09.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-10.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-11.png" alt="" /></div>
+              <div class="reel__tile"><img src="assets/everlasting-quiz/screen-12.png" alt="" /></div>
+            </div>
+          </div>
+          <div class="cs-hero__side">
+            <div class="cs-hero__gif"><img src="assets/everlasting-quiz/hero-quiz.gif" alt="The Fabric Matchmaker quiz in use" /></div>
+            <div class="cs-hero__map"><img src="assets/everlasting-quiz/scoring-map.png" alt="FigJam: example answer paths, including the tie-break rule" /></div>
+          </div>
+        </div>
+
+        <dl class="cs-facts">
+          <div><dt>Role</dt><dd>Product/Web Design Intern</dd></div>
+          <div><dt>Team</dt><dd>Sole Designer</dd></div>
+          <div><dt>Timeline</dt><dd>4 Weeks</dd></div>
+          <div><dt>Project Type</dt><dd>E-commerce</dd></div>
+        </dl>
+
+        <p class="cs-eyebrow cs-mt-96">Overview</p>
+        <h2 class="cs-statement">Shoppers knew the feeling they wanted. <span class="cs-red">They just couldn’t find the product.</span></h2>
+
+        <div class="cs-cols3 cs-mt-40">
+          <div class="cs-col">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <p class="cs-eyebrow">01 The pitch</p>
+            <h3 class="cs-h3">A quiz that starts with feelings</h3>
+            <p class="cs-body">During intern onboarding, every intern pitched one idea. Mine was a fabric matchmaking quiz to lift conversion, and it was chosen out of 8 concepts.</p>
+          </div>
+          <div class="cs-col">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <p class="cs-eyebrow">02 The campaign</p>
+            <h3 class="cs-h3">Assigned to back-to-school</h3>
+            <p class="cs-body">The team made it part of the back-to-school launch. I designed and implemented it end to end: 8 dorm-life questions, 3 aesthetics, real product photography.</p>
+          </div>
+          <div class="cs-col">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <p class="cs-eyebrow">03 The outcome</p>
+            <h3 class="cs-h3">A new way to shop, in the main nav</h3>
+            <p class="cs-body">First-time shoppers now answer how they want their dorm to feel and get curated pieces back, instead of scrolling hundreds of look-alikes.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Problem ===== -->
+      <section id="problem" class="cs-section cs-mt-150">
+        <p class="cs-eyebrow">Problem</p>
+        <h2 class="cs-h2">First-time shoppers loved the look, then <span class="cs-red">left</span> before adding anything to their cart.</h2>
+        <p class="cs-body">Ever Lasting’s catalogue is full of soft neutrals, ruffles, cotton, and linen. Beautiful, but at a glance it all looks the same. New visitors browsed, hesitated, and left at the exact moment they were deciding, while the brand kept paying to bring them in.</p>
+
+        <div class="cs-saw cs-mt-47">
+          <div class="cs-saw__col cs-saw__col--saw">
+            <p class="cs-eyebrow">What shoppers saw</p>
+            <h3 class="cs-h4">Dozens of near-identical neutrals</h3>
+            <div class="cs-panel cs-catalogue">
+              <div class="cs-catalogue__screen"><img src="assets/everlasting-quiz/catalogue-scroll.gif" alt="Scrolling Ever Lasting’s catalogue of similar neutral bedding" loading="lazy" /></div>
+            </div>
+          </div>
+          <div class="cs-saw__col cs-saw__col--left">
+            <p class="cs-eyebrow">Where they left</p>
+            <h3 class="cs-h4">Most shoppers dropped off at product view</h3>
+            <div class="cs-panel cs-funnel">
+              <p class="cs-eyebrow">Ever Lasting’s existing funnel</p>
+              <ol class="cs-funnel__steps">
+                <li style="--w:400px"><span>01</span>Site visit</li>
+                <li style="--w:340px" class="is-drop"><span>02</span>Product view<em>↓ Biggest drop-off</em></li>
+                <li style="--w:280px"><span>03</span>Add to cart</li>
+                <li style="--w:220px"><span>04</span>Checkout</li>
+                <li style="--w:160px"><span>05</span>Purchase</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="cs-quote cs-mt-48">
+          <p>“Everything looks so similar, I end up opening ten tabs and closing all of them.”</p>
+          <cite>Ever Lasting shopper</cite>
+        </blockquote>
+
+        <div class="cs-cols2 cs-mt-56">
+          <div>
+            <p class="cs-eyebrow">Who I designed for</p>
+            <p class="cs-body">First-time visitors drawn to the aesthetic who don’t know fabric terms yet. For back-to-school, that meant students setting up their first dorm: they know the vibe, not the fabric.</p>
+          </div>
+          <div>
+            <p class="cs-eyebrow">If nothing changed</p>
+            <p class="cs-body">Ever Lasting keeps paying to bring shoppers in, and they keep leaving right when they’re about to choose.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Research ===== -->
+      <section id="research" class="cs-section cs-mt-159">
+        <p class="cs-eyebrow">Research</p>
+        <h2 class="cs-h2">I had 4 weeks and no research budget, so I picked 3 quick methods that each answered one question.</h2>
+        <p class="cs-body">I skipped a survey because traffic was too low to get answers fast, and formal interviews would have eaten a week I needed for design.</p>
+
+        <div class="cs-cols3 cs-mt-37">
+          <div class="cs-col cs-col--tight">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <p class="cs-eyebrow">01&nbsp;&nbsp;Competitive analysis</p>
+            <p class="cs-body">How do similar brands guide shoppers to a product?</p>
+          </div>
+          <div class="cs-col cs-col--tight">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <p class="cs-eyebrow">02 Ten shopper chats</p>
+            <p class="cs-body">How do shoppers describe what they want, in their own words?</p>
+          </div>
+          <div class="cs-col cs-col--tight">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <p class="cs-eyebrow">03 Reverse keyword search</p>
+            <p class="cs-body">What words do shoppers actually search with?</p>
+          </div>
+        </div>
+
+        <div class="cs-insights cs-mt-63">
+          <div class="cs-insight">
+            <p class="cs-eyebrow">Insight 01</p>
+            <h3 class="cs-h4">Shopping quizzes were useful but cold. Editorial ones were warm but led nowhere.</h3>
+            <p class="cs-body">Parachute and Skims sort by function, like hot vs. cold sleeper. Refinery29 nails mood, but never links it to products.</p>
+          </div>
+          <div class="cs-insight">
+            <p class="cs-eyebrow">Insight 02</p>
+            <h3 class="cs-h4">Shoppers describe what they want in feelings, not features.</h3>
+            <p class="cs-body">They could name a mood instantly (calm, nostalgic, cozy) but not a fabric, weave, or thread count.</p>
+          </div>
+          <div class="cs-panel cs-collage">
+            <div class="cs-collage__grid">
+              <div class="cs-collage__img cs-collage__img--1"><img src="assets/everlasting-quiz/comp-1.png" alt="" loading="lazy" /></div>
+              <div class="cs-collage__img cs-collage__img--2"><img src="assets/everlasting-quiz/comp-2.png" alt="" loading="lazy" /></div>
+              <div class="cs-collage__img cs-collage__img--3"><img src="assets/everlasting-quiz/comp-3.png" alt="" loading="lazy" /></div>
+              <div class="cs-collage__img cs-collage__img--4"><img src="assets/everlasting-quiz/comp-4.png" alt="" loading="lazy" /></div>
+              <div class="cs-collage__img cs-collage__img--5"><img src="assets/everlasting-quiz/comp-5.png" alt="" loading="lazy" /></div>
+            </div>
+          </div>
+          <div class="cs-panel cs-voices">
+            <p>“I know the vibe I want, I just don’t know if that’s linen or cotton or what.”</p>
+            <p>“Everything looks so similar, I end up opening ten tabs and closing all of them.”</p>
+            <p>“I don’t really shop by fabric. I shop by how my room will feel.”</p>
+          </div>
+        </div>
+
+        <p class="cs-eyebrow cs-mt-64">Insight 03</p>
+        <h3 class="cs-h4">Searches clustered into 4 themes: aesthetic, texture, mood, and colour.</h3>
+        <p class="cs-body cs-body--tight">Shoppers lead with a feeling, then a texture, then a colour. These 4 themes became the categories for every quiz question.</p>
+
+        <div class="cs-panel cs-searches" data-searches aria-label="Example shopper searches and the theme each one belongs to">
+          <div class="cs-searches__row">
+            <div class="cs-search"><img src="assets/everlasting-quiz/search-icon.svg" width="18" height="18" alt="" /><p class="cs-search__q">comfy soft bedding</p><span class="cs-search__cursor"></span></div>
+            <span class="cs-theme" style="--bg:#e9e6de;--fg:#6f6a5e"><img src="assets/everlasting-quiz/dot-mood.svg" width="6" height="6" alt="" />Mood</span>
+          </div>
+          <div class="cs-searches__row cs-searches__row--flip">
+            <span class="cs-theme" style="--bg:#e6e1ea;--fg:#6a5b72"><img src="assets/everlasting-quiz/dot-aesthetic.svg" width="6" height="6" alt="" />Aesthetic</span>
+            <div class="cs-search"><img src="assets/everlasting-quiz/search-icon.svg" width="18" height="18" alt="" /><p class="cs-search__q">cottagecore bedding</p><span class="cs-search__cursor"></span></div>
+          </div>
+          <div class="cs-searches__row">
+            <div class="cs-search"><img src="assets/everlasting-quiz/search-icon.svg" width="18" height="18" alt="" /><p class="cs-search__q">soft linen duvet</p><span class="cs-search__cursor"></span></div>
+            <span class="cs-theme" style="--bg:#efe2d8;--fg:#9a6448"><img src="assets/everlasting-quiz/dot-texture.svg" width="6" height="6" alt="" />Texture</span>
+          </div>
+          <div class="cs-searches__row cs-searches__row--flip">
+            <span class="cs-theme" style="--bg:#e1e6ea;--fg:#5d6872"><img src="assets/everlasting-quiz/dot-colour.svg" width="6" height="6" alt="" />Colour</span>
+            <div class="cs-search"><img src="assets/everlasting-quiz/search-icon.svg" width="18" height="18" alt="" /><p class="cs-search__q">cozy neutral bedroom</p><span class="cs-search__cursor"></span></div>
+          </div>
+        </div>
+
+        <p class="cs-gap">The gap I found: Ever Lasting’s soft, poetic voice was a real differentiator, but the website wasn’t carrying it into discovery.</p>
+      </section>
+
+      <!-- ===== Direction: design problem + why a quiz ===== -->
+      <section id="direction" class="cs-section cs-mt-217">
+        <p class="cs-eyebrow">Design problem</p>
+        <h2 class="cs-h2">How might we help first-time shoppers turn how they want to feel into the right Ever Lasting pieces?</h2>
+        <p class="cs-body">My bet: if shoppers can say what they want in feelings instead of features, they’ll find pieces that feel personal and add to cart instead of leaving.</p>
+
+        <p class="cs-eyebrow cs-mt-55">Why a quiz</p>
+        <h3 class="cs-h4">I explored 3 ways to guide shoppers. Only one fixed the root problem.</h3>
+        <div class="cs-options cs-mt-24">
+          <div class="cs-option">
+            <h4 class="cs-h4">Better filters</h4>
+            <p class="cs-eyebrow">Works</p>
+            <p class="cs-option__text">Cheap and familiar</p>
+            <p class="cs-eyebrow">Falls short</p>
+            <p class="cs-option__text">Assumes shoppers know what they want, like “cotton, queen, under $200.” My research said they don’t.</p>
+          </div>
+          <div class="cs-option">
+            <h4 class="cs-h4">Curated edits</h4>
+            <p class="cs-eyebrow">Works</p>
+            <p class="cs-option__text">On-brand and inspiring</p>
+            <p class="cs-eyebrow">Falls short</p>
+            <p class="cs-option__text">Still browsing. Shoppers have to pick an edit, which is the same decision I was trying to remove.</p>
+          </div>
+          <div class="cs-option cs-option--chosen">
+            <h4 class="cs-h4">A guided quiz</h4>
+            <span class="cs-option__tag">CHOSEN</span>
+            <p class="cs-eyebrow">Works</p>
+            <p class="cs-option__text">Meets shoppers in their own words, then translates for them</p>
+            <p class="cs-eyebrow">Falls short</p>
+            <p class="cs-option__text">More to build, and every question risks drop-off. I offset that by keeping it short.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Solution ===== -->
+      <section id="solution" class="cs-section cs-mt-160">
+        <p class="cs-eyebrow">Solution</p>
+        <h2 class="cs-h2">A 1-minute quiz that turns dorm-life choices into pieces students actually want.</h2>
+        <p class="cs-body">The Fabric Matchmaker lives in the main nav. It asks 8 quick questions, scores each answer toward one of 3 aesthetics, and ends on a persona with curated pieces.</p>
+
+        <div class="cs-feature cs-mt-79">
+          <div class="cs-feature__text">
+            <h3 class="cs-h2">01&nbsp;&nbsp;Start where shoppers already look</h3>
+            <p class="cs-body">I put “Find Your Fabric Aesthetic” in the main nav, next to Best Sellers and New. A pop-up gets dismissed on reflex. The nav makes the quiz a real way to shop, and let me track how people find it.</p>
+          </div>
+          <div class="cs-feature__media cs-navgif"><img src="assets/everlasting-quiz/nav-entry.gif" alt="“Find Your Fabric Aesthetic” in Ever Lasting’s main navigation" loading="lazy" /></div>
+        </div>
+
+        <div class="cs-feature cs-mt-96">
+          <div class="cs-feature__text">
+            <h3 class="cs-h2">02&nbsp;&nbsp;Ask about feelings, show real products</h3>
+            <p class="cs-body">8 questions about dorm life: first impressions, study spots, scent, playlist, semester energy. 5 use Ever Lasting’s own product photos and 3 are quick emoji taps, so shoppers see real pieces before they ever hit a result.</p>
+          </div>
+          <div class="cs-feature__media cs-feature__media--framed">
+            <div class="reel" role="img" aria-label="The 12 quiz screens coming together">
+              <div class="reel__stage">
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-01.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-02.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-03.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-04.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-05.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-06.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-07.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-08.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-09.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-10.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-11.png" alt="" loading="lazy" /></div>
+                <div class="reel__tile"><img src="assets/everlasting-quiz/screen-12.png" alt="" loading="lazy" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="cs-h2 cs-mt-96">03&nbsp;&nbsp;Give them an identity, not a grid</h3>
+        <p class="cs-body">Answers add up to Minimal, Artsy, or Boho. Each persona reads back what the shopper told me, with its own 3 words and a few curated pieces, so the choice drops from hundreds to a handful.</p>
+        <div class="cs-personas cs-mt-31">
+          <div class="cs-persona" style="--bg:#eeede8">
+            <div class="cs-persona__swatches">
+              <img src="assets/everlasting-quiz/swatch-minimal-1.svg" width="28" height="28" alt="" /><img src="assets/everlasting-quiz/swatch-minimal-2.svg" width="28" height="28" alt="" /><img src="assets/everlasting-quiz/swatch-minimal-3.svg" width="28" height="28" alt="" />
+            </div>
+            <h4 class="cs-persona__name">Minimal</h4>
+            <p class="cs-persona__words">Clean · Elevated · Focused</p>
+            <ul class="cs-persona__list">
+              <li><img src="assets/everlasting-quiz/line-301.svg" width="301" height="2" alt="" />Study spot: colour-coded desk</li>
+              <li><img src="assets/everlasting-quiz/line-301.svg" width="301" height="2" alt="" />Scent: crisp sage</li>
+              <li><img src="assets/everlasting-quiz/line-301.svg" width="301" height="2" alt="" />Playlist: classical</li>
+            </ul>
+          </div>
+          <div class="cs-persona" style="--bg:#ece9ee">
+            <div class="cs-persona__swatches">
+              <img src="assets/everlasting-quiz/swatch-artsy-1.svg" width="28" height="28" alt="" /><img src="assets/everlasting-quiz/swatch-artsy-2.svg" width="28" height="28" alt="" /><img src="assets/everlasting-quiz/swatch-artsy-3.svg" width="28" height="28" alt="" />
+            </div>
+            <h4 class="cs-persona__name">Artsy</h4>
+            <p class="cs-persona__words">Expressive · Bold · Intentional</p>
+            <ul class="cs-persona__list">
+              <li><img src="assets/everlasting-quiz/line-301.svg" width="301" height="2" alt="" />Study spot: in bed, lo-fi beats</li>
+              <li><img src="assets/everlasting-quiz/line-301.svg" width="301" height="2" alt="" />Scent: incense and leather</li>
+              <li><img src="assets/everlasting-quiz/line-301.svg" width="301" height="2" alt="" />Playlist: lo-fi jazz</li>
+            </ul>
+          </div>
+          <div class="cs-persona" style="--bg:#f2eae3">
+            <div class="cs-persona__swatches">
+              <img src="assets/everlasting-quiz/swatch-boho-1.svg" width="28" height="28" alt="" /><img src="assets/everlasting-quiz/swatch-boho-2.svg" width="28" height="28" alt="" /><img src="assets/everlasting-quiz/swatch-boho-3.svg" width="28" height="28" alt="" />
+            </div>
+            <h4 class="cs-persona__name">Boho</h4>
+            <p class="cs-persona__words">Warm · Textured · Inviting</p>
+            <ul class="cs-persona__list">
+              <li><img src="assets/everlasting-quiz/line-301.svg" width="301" height="2" alt="" />Study spot: by the window, tea</li>
+              <li><img src="assets/everlasting-quiz/line-301.svg" width="301" height="2" alt="" />Scent: sweet vanilla</li>
+              <li><img src="assets/everlasting-quiz/line-301.svg" width="301" height="2" alt="" />Playlist: acoustic indie</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-feature cs-mt-96">
+          <div class="cs-feature__text">
+            <h3 class="cs-h2">04&nbsp;&nbsp;Ask for email after the payoff</h3>
+            <p class="cs-body">Gating the result behind an email gets more sign-ups, but adds drop-off right before the reward. I asked after the result instead, so the ask feels earned. Results sync to Klaviyo, so follow-ups match each shopper’s aesthetic.</p>
+          </div>
+          <div class="cs-panel cs-email">
+            <div class="cs-email__card">
+              <p class="cs-email__tag">CONSIDERED</p>
+              <h4 class="cs-h4">Gate the result behind email</h4>
+              <p class="cs-email__text">More sign-ups, more drop-off before the payoff</p>
+            </div>
+            <div class="cs-email__card cs-email__card--chosen">
+              <p class="cs-email__tag">CHOSEN</p>
+              <h4 class="cs-h4">Ask after the result</h4>
+              <p class="cs-email__text">Fewer sign-ups, but shoppers already got value</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Process ===== -->
+      <section id="process" class="cs-section cs-mt-160">
+        <p class="cs-eyebrow">Process</p>
+        <h2 class="cs-h2">The quiz started as 10 questions. Feedback on version 1 cut it down to 8.</h2>
+        <p class="cs-body">I built version 1 from the 4 research themes: 10 questions, 4 answers each, with every letter tied to one aesthetic. Then I shared it for feedback. Toggle between versions to see what changed and why.</p>
+
+        <div class="cs-panel cs-versions cs-mt-39" data-versions>
+          <div class="cs-versions__top">
+            <div class="cs-toggle" role="tablist" aria-label="Quiz version">
+              <button class="cs-toggle__btn is-on" type="button" role="tab" aria-selected="true" aria-controls="quiz-v1" id="tab-v1">Version 1</button>
+              <button class="cs-toggle__btn" type="button" role="tab" aria-selected="false" aria-controls="quiz-v2" id="tab-v2">Version 2</button>
+            </div>
+            <p class="cs-versions__summary" data-v1="Version 1 · 10 questions · 4 aesthetics" data-v2="Version 2 · 8 questions · 3 aesthetics">Version 1 · 10 questions · 4 aesthetics</p>
+          </div>
+
+          <div class="cs-version" id="quiz-v1" role="tabpanel" aria-labelledby="tab-v1">
+            <p class="cs-eyebrow">Quiz screens · version 1</p>
+            <div class="cs-version__screens">
+              <div class="cs-version__phones">
+                <img src="assets/everlasting-quiz/v1-phone-1.png" alt="Version 1: menu with Find Your Fabric Aesthetic" loading="lazy" />
+                <img src="assets/everlasting-quiz/v1-phone-2.png" alt="Version 1: Fabric Matchmaker intro" loading="lazy" />
+                <img src="assets/everlasting-quiz/v1-phone-3.png" alt="Version 1: question over a bedroom photo" loading="lazy" />
+                <img src="assets/everlasting-quiz/v1-phone-4.png" alt="Version 1: result" loading="lazy" />
+                <img src="assets/everlasting-quiz/v1-phone-5.png" alt="Version 1: product page" loading="lazy" />
+              </div>
+            </div>
+            <div class="cs-version__bottom">
+              <div>
+                <p class="cs-eyebrow">From my FigJam · version 1 map</p>
+                <div class="cs-version__map cs-version__map--v1"><img src="assets/everlasting-quiz/v1-figjam-map.png" alt="Version 1 map: every answer tied to one of 4 aesthetics" loading="lazy" /></div>
+              </div>
+              <div>
+                <p class="cs-eyebrow">Feedback on version 1</p>
+                <ol class="cs-points">
+                  <li><img src="assets/everlasting-quiz/line-514.svg" width="514" height="2" alt="" /><h4 class="cs-h4">01&nbsp;&nbsp;Hard to see</h4><p>Answer text sat on top of a busy bedroom photo, so it was hard to read.</p></li>
+                  <li><img src="assets/everlasting-quiz/line-514.svg" width="514" height="2" alt="" /><h4 class="cs-h4">02&nbsp;&nbsp;Distracting</h4><p>The full-bleed background photo competed with the answers for attention.</p></li>
+                  <li><img src="assets/everlasting-quiz/line-514.svg" width="514" height="2" alt="" /><h4 class="cs-h4">03&nbsp;&nbsp;Make it simpler</h4><p>Long, poetic answer labels and 4 options per question slowed people down.</p></li>
+                  <li><img src="assets/everlasting-quiz/line-514.svg" width="514" height="2" alt="" /><h4 class="cs-h4">04&nbsp;&nbsp;No hierarchy</h4><p>The question, answers, and progress had similar weight, so nothing led the eye.</p></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-version" id="quiz-v2" role="tabpanel" aria-labelledby="tab-v2" hidden>
+            <p class="cs-eyebrow">Quiz screens · version 2</p>
+            <div class="cs-version__screens">
+              <div class="cs-version__phones cs-version__phones--v2">
+                <img src="assets/everlasting-quiz/v2-phone-1.png" alt="Version 2: What’s your vibe? intro card" loading="lazy" />
+                <img src="assets/everlasting-quiz/v2-phone-2.png" alt="Version 2: question 1 with product photo answers" loading="lazy" />
+                <img src="assets/everlasting-quiz/v2-phone-3.png" alt="Version 2: question 8 with product photo answers" loading="lazy" />
+                <img src="assets/everlasting-quiz/v2-phone-4.png" alt="Version 2: Minimal result card" loading="lazy" />
+                <img src="assets/everlasting-quiz/v2-phone-5.png" alt="Version 2: curated Minimal collection" loading="lazy" />
+                <img src="assets/everlasting-quiz/v2-phone-6.png" alt="Version 2: product page" loading="lazy" />
+              </div>
+            </div>
+            <div class="cs-version__bottom">
+              <div>
+                <p class="cs-eyebrow">From my FigJam · version 2 map</p>
+                <div class="cs-version__map cs-version__map--v2"><img src="assets/everlasting-quiz/figjam-question-map.png" alt="Version 2 map: every answer tied to one of 3 aesthetics" loading="lazy" /></div>
+              </div>
+              <div>
+                <p class="cs-eyebrow">What changed in version 2</p>
+                <ol class="cs-points">
+                  <li><img src="assets/everlasting-quiz/line-514.svg" width="514" height="2" alt="" /><h4 class="cs-h4">01&nbsp;&nbsp;Easier to read</h4><p>Each question sits on a clean white card instead of on top of the photo.</p></li>
+                  <li><img src="assets/everlasting-quiz/line-514.svg" width="514" height="2" alt="" /><h4 class="cs-h4">02&nbsp;&nbsp;Real products as answers</h4><p>Every answer is an Ever Lasting product photo with a short label.</p></li>
+                  <li><img src="assets/everlasting-quiz/line-514.svg" width="514" height="2" alt="" /><h4 class="cs-h4">03&nbsp;&nbsp;Simpler</h4><p>8 questions, 3 answers each, and 3 clearly different aesthetics.</p></li>
+                  <li><img src="assets/everlasting-quiz/line-514.svg" width="514" height="2" alt="" /><h4 class="cs-h4">04&nbsp;&nbsp;Clear hierarchy</h4><p>Progress on top, question first, answers as cards, Back and Next at the bottom.</p></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="cs-h2 cs-mt-96">Every answer is a point, so mixed answers still land somewhere clear.</h2>
+        <p class="cs-body">Shoppers rarely pick one letter all the way through. Whichever aesthetic collects the most points becomes their result.</p>
+        <p class="cs-body"><strong class="cs-tiebreak">Tie-break:</strong> if two aesthetics tie (like 3 · 3 · 2 or 4 · 4), the result goes to whichever tied aesthetic the shopper picked most recently, starting from question 8, “Your dream dorm setup in 3 words.” That question asks for their style most directly, and working backwards through their answers always settles it, so nobody lands on a split result.</p>
+        <div class="cs-figjams cs-mt-33">
+          <figure class="cs-panel cs-figjam cs-figjam--tall">
+            <figcaption>FigJam · Every answer, mapped to an aesthetic</figcaption>
+            <img src="assets/everlasting-quiz/figjam-question-map.png" alt="FigJam: every answer mapped to Minimal, Artsy or Boho" loading="lazy" />
+          </figure>
+          <figure class="cs-panel cs-figjam">
+            <figcaption>FigJam · How the quiz scores</figcaption>
+            <img src="assets/everlasting-quiz/figjam-scoring.png" alt="FigJam: each answer is one point, most points wins, ties go to the most recent tied pick, then persona result and email opt-in" loading="lazy" />
+          </figure>
+          <figure class="cs-panel cs-figjam">
+            <figcaption>FigJam · Different answers, same result</figcaption>
+            <img src="assets/everlasting-quiz/figjam-same-result.png" alt="FigJam: examples of mixed answers landing on one aesthetic, plus the tie-break rule" loading="lazy" />
+          </figure>
+          <figure class="cs-panel cs-figjam">
+            <figcaption>FigJam · How 4 aesthetics became 3</figcaption>
+            <img src="assets/everlasting-quiz/figjam-4-to-3.png" alt="FigJam: Minimalist and Modern merged, Luxurious became Artsy, Boho stayed" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===== Impact ===== -->
+      <section id="impact" class="cs-section cs-mt-161">
+        <p class="cs-eyebrow">Impact</p>
+        <h2 class="cs-h2">Quiz takers converted 25% more often than shoppers who browsed on their own.</h2>
+        <p class="cs-body">Chosen out of 8 intern concepts, then designed and shipped by me in 4 weeks for the back-to-school launch.</p>
+        <div class="cs-stats cs-mt-40">
+          <div class="cs-stat"><p class="cs-stat__num">+25%</p><p class="cs-stat__text">conversion from quiz takers vs. non-quiz shoppers</p></div>
+          <div class="cs-stat"><p class="cs-stat__num">~22%</p><p class="cs-stat__text">less drop-off during discovery</p></div>
+          <div class="cs-stat"><p class="cs-stat__num">+20%</p><p class="cs-stat__text">sales on launch day vs. the average day in the month before</p></div>
+          <div class="cs-stat"><p class="cs-stat__num">1 of 8</p><p class="cs-stat__text">intern pitches chosen to ship</p></div>
+        </div>
+
+        <div class="rail cs-mt-40" role="img" aria-label="Fabric Matchmaker screens sliding past one at a time">
+          <div class="rail__track">
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-05.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-06.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-03.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-01.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-02.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-07.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-08.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-09.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-10.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-11.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-12.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-04.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-05.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-06.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-03.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-01.png" alt="" loading="lazy" /></div>
+            <div class="rail__card"><img src="assets/everlasting-quiz/screen-02.png" alt="" loading="lazy" /></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Takeaways ===== -->
+      <section id="takeaways" class="cs-section cs-mt-80">
+        <p class="cs-eyebrow">My takeaways</p>
+        <div class="cs-cols3 cs-mt-18">
+          <div class="cs-col cs-col--takeaway">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <h3 class="cs-h3">Brand is a UX tool.</h3>
+            <p class="cs-body">Ever Lasting's branding was a real market differentiator that can be used for leverage. The best fix for decision fatigue wasn’t fewer products, it was a better question.</p>
+          </div>
+          <div class="cs-col cs-col--takeaway">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <h3 class="cs-h3">Cut what blurs.</h3>
+            <p class="cs-body">Going from 10 questions to 8 and 4 aesthetics to 3 made every result more focused (fewer, clearer choices beat more, overlapping ones).</p>
+          </div>
+          <div class="cs-col cs-col--takeaway">
+            <img class="cs-line" src="assets/everlasting-quiz/line-351.svg" width="351" height="2" alt="" />
+            <h3 class="cs-h3">Pitch like it’s already real!</h3>
+            <p class="cs-body">Pitch like it's already real! I was an intern in my first week, the idea got picked because it showed why this brand, why this problem, and why now.</p>
+          </div>
+        </div>
+
+        <p class="cs-eyebrow cs-mt-77">If I had more time</p>
+        <p class="cs-body">I’d bring the matchmaker onto product pages as a style concierge, and test persona-based Klaviyo emails to see how many quiz takers come back for a second order.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__label footer__clock">TORONTO&nbsp;&nbsp;<time id="toronto-time">3:13 am</time></p>
+    <div class="footer__group">
+      <p class="footer__label footer__label--mono">HI!</p>
+      <a href="mailto:k3npiquero@gmail.com">Email</a>
+      <a href="https://www.instagram.com/oreuqipp/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/kenpiquero/" target="_blank" rel="noopener">Linkedin</a>
+      <a href="https://x.com/pink_saucee" target="_blank" rel="noopener">X</a>
+    </div>
+    <div class="footer__group">
+      <p class="footer__label">PAGES</p>
+      <a href="index.html">Work</a>
+      <a href="playground.html">Playground</a>
+      <a href="about.html">About</a>
+    </div>
+    <p class="footer__label footer__copy">KEN PIQUERO © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

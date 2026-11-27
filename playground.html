@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Playground — Ken Piquero</title>
+  <meta name="description" content="Ken Piquero is a product designer with a background in e-commerce." />
+  <link rel="icon" href="assets/discoball.gif" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Hanken+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <div class="page">
+    <!-- Side nav -->
+    <aside class="sidenav">
+      <div class="intro">
+        <a class="logo-link" href="index.html" aria-label="Ken Piquero, home"><img class="logo" src="assets/discoball.gif" width="70" height="70" alt="" /></a>
+        <div class="intro__text">
+          <div class="intro__copy">
+            <h1 class="intro__title" data-typewriter aria-label="Welcome to my playground :3">Welcome to my playground :3</h1>
+            <p class="intro__bio appear" style="--d:0ms">A collection of fun projects, WIPs and things I like to remember.</p>
+          </div>
+        </div>
+      </div>
+
+      <nav class="pages" aria-label="Pages">
+        <a class="pages__link" href="index.html"><span class="pages__label">Work</span></a>
+        <a class="pages__link is-active" href="playground.html" aria-current="page"><span class="pages__label">Playground</span></a>
+        <a class="pages__link" href="about.html"><span class="pages__label">About</span></a>
+        <a class="pages__link" href="https://drive.google.com/file/d/1ALhv70O0RMB7-Ny_9Tpl9LPKsm_A7ia5/view?usp=sharing" target="_blank" rel="noopener"><span class="pages__label">Resume</span></a>
+      </nav>
+
+      <!-- Photo puzzle: drag a tile to swap it clockwise, click a tile to flip its photo -->
+      <div class="puzzle" aria-label="Photo puzzle — drag a tile to swap it clockwise, click to change its photo">
+        <button class="tile" data-piece="1" type="button" aria-label="Puzzle piece 1" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-113.07%;top:-184.95%;width:240.09%" />
+            <span class="sticker" style="left:59.97px;top:47px"></span>
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:61.68px;top:62.37px" />
+            <span class="sticker" style="left:41.96px;top:64.4px"></span>
+            <span class="sticker" style="left:31.97px;top:57.49px"></span>
+            <span class="sticker" style="left:21.99px;top:57.49px"></span>
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:13.71px;top:65.28px" />
+          </span>
+          <span class="tile__face tile__face--b">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-57.9%;top:-0.03%;width:378.38%" />
+          </span>
+        </button>
+        <button class="tile" data-piece="2" type="button" aria-label="Puzzle piece 2" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-0.21%;top:-73.68%;width:236.71%" />
+            <img class="sticker-rect" src="assets/sticker-rect.svg" width="7.68155" height="10.7542" alt="" style="left:2px;top:56.36px" />
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:31.11px;top:42.64px" />
+            <span class="sticker" style="left:29.4px;top:51.07px"></span>
+            <span class="sticker" style="left:17.93px;top:47.41px"></span>
+            <span class="sticker" style="left:17.93px;top:61.14px"></span>
+          </span>
+          <span class="tile__face tile__face--b">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-169.32%;top:-0.03%;width:378.38%" />
+          </span>
+        </button>
+        <button class="tile" data-piece="3" type="button" aria-label="Puzzle piece 3" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-113.07%;top:-73.68%;width:240.09%" />
+            <span class="sticker" style="left:52px;top:2px;width:16.131px;height:6.913px"></span>
+            <span class="sticker" style="left:60.03px;top:12.26px"></span>
+          </span>
+          <span class="tile__face tile__face--b">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-57.9%;top:-109.89%;width:378.38%" />
+          </span>
+        </button>
+        <button class="tile" data-piece="4" type="button" aria-label="Puzzle piece 4" aria-pressed="false">
+          <span class="tile__face tile__face--a">
+            <img class="tile__photo" src="assets/me-photo.jpg" alt="" style="height:315.94%;left:-0.21%;top:-183.54%;width:236.71%" />
+            <span class="sticker" style="left:2px;top:2px;width:23.813px;height:6.913px"></span>
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:31.11px;top:24.89px" />
+            <img class="star" src="assets/star.svg" width="4.26034" height="4.12428" alt="" style="left:39.81px;top:24.89px" />
+            <span class="sticker" style="left:29.4px;top:12.26px"></span>
+            <span class="sticker" style="left:17.93px;top:12.26px"></span>
+          </span>
+          <span class="tile__face tile__face--b" style="left:1px;width:70px">
+            <img class="tile__photo" src="assets/me-photo-2.jpg" alt="" style="height:209.92%;left:-169.32%;top:-109.89%;width:378.38%" />
+          </span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="playground">
+      <a class="pg-tile pg-tile--wide" href="https://www.figma.com/deck/y7GQCiKToL69L5lKDEhT8K/SafeGuard_Pitch?node-id=1-144&amp;p=f&amp;viewport=425%2C262%2C0.24&amp;t=0BwFdKjF8k5lErn6-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1" target="_blank" rel="noopener">
+        <img class="pg-media pg-ipad" src="assets/playground/safeguard-ipad.png" alt="Safe Guard dashboard on an iPad" />
+        <p class="pg-caption">Winning pitch deck for Red Threads Innovation’s tackling online harm challenge!</p>
+      </a>
+
+      <div class="pg-tile" tabindex="0">
+        <div class="pg-media pg-crop" style="height:98.86%;aspect-ratio:431/432">
+          <img src="assets/playground/recipe-book.png" alt="Open recipe book with red illustrations" style="height:100%;width:133.46%;left:-16.92%;top:-4.65%" />
+        </div>
+        <p class="pg-caption">Made a recipe book for my friend!</p>
+      </div>
+
+      <div class="pg-tile pg-tile--tall" tabindex="0">
+        <img class="pg-media pg-shot" src="assets/playground/hackville-reel.gif" alt="Hackville recruiting promo reel" style="height:74.94%;aspect-ratio:377/670" />
+        <p class="pg-caption">Promotional video reel I made for Hackville!</p>
+      </div>
+
+      <div class="pg-tile pg-tile--tall" tabindex="0">
+        <img class="pg-media pg-shot pg-shot--phone" src="assets/playground/valorant-data-viz.gif" alt="Valorant stats screens in a mobile app" style="height:86.35%;aspect-ratio:377/772" />
+        <p class="pg-caption">Data visualization project for Valorant on riot mobile app</p>
+      </div>
+
+      <div class="pg-tile" tabindex="0">
+        <img class="pg-media pg-shot" src="assets/playground/hackville-stickers.jpg" alt="Hackville stickers on a laptop" style="height:86.27%;aspect-ratio:1" />
+        <p class="pg-caption">Made stickers to give away to 200+ hackers onsite @ Hackville!</p>
+      </div>
+
+      <div class="pg-tile pg-tile--wide" tabindex="0">
+        <img class="pg-media pg-cover" src="assets/playground/recipe-book-spreads.png" alt="Recipe book spreads laid out" />
+        <p class="pg-caption">Made a recipe book for my friend!</p>
+      </div>
+
+      <div class="pg-tile" tabindex="0">
+        <div class="pg-media pg-crop" style="height:86.5%;aspect-ratio:377/378">
+          <img src="assets/playground/valentines-blind-box.png" alt="Valentine’s blind box packaging" style="height:100.2%;width:133.95%;left:-16.98%;top:-0.1%" />
+        </div>
+        <p class="pg-caption">Created a valentines blind box design for my friend!</p>
+      </div>
+
+      <div class="pg-tile" tabindex="0">
+        <div class="pg-media pg-crop" style="height:86.5%;aspect-ratio:377/378">
+          <img src="assets/playground/crying-in-hmart.png" alt="Book cover design for Crying in H Mart" style="height:100%;width:133.46%;left:-5.01%;top:0" />
+        </div>
+        <p class="pg-caption">Old book cover design I made for Crying in Hmart by Michelle Zauner</p>
+      </div>
+
+      <div class="pg-tile pg-tile--wide" tabindex="0">
+        <img class="pg-media pg-wide-shot" src="assets/playground/thesis-promo.png" alt="Prism fitness app on phones and a tablet" />
+        <p class="pg-caption">Promotional material for my thesis project!</p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__label footer__clock">TORONTO&nbsp;&nbsp;<time id="toronto-time">3:13 am</time></p>
+    <div class="footer__group">
+      <p class="footer__label footer__label--mono">HI!</p>
+      <a href="mailto:k3npiquero@gmail.com">Email</a>
+      <a href="https://www.instagram.com/oreuqipp/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/kenpiquero/" target="_blank" rel="noopener">Linkedin</a>
+      <a href="https://x.com/pink_saucee" target="_blank" rel="noopener">X</a>
+    </div>
+    <div class="footer__group">
+      <p class="footer__label">PAGES</p>
+      <a href="index.html">Work</a>
+      <a href="playground.html">Playground</a>
+      <a href="about.html">About</a>
+    </div>
+    <p class="footer__label footer__copy">KEN PIQUERO © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
